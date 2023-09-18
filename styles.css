@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: garamond;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    color: #faeded;
+    background-image: linear-gradient(#ca8472, #6b482b);
+}
+.home-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 2rem;
+    padding: 15px;
+    width: 70%;
+    letter-spacing: 1px;
+}
+.home-titles h1{
+    font-size: 60px;
+}
+.home-titles h2{
+    font-size: 40px;
+}
+.home-description{
+    padding: 20px;
+    margin-bottom:  40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-description img{
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.home-description p{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.home-btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    width: 50%;
+}
+.btn-login, .btn-register{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+.btn-login:hover, .btn-register:hover{
+    background-color: #BFBFBF;
+    transition: 0.5s;
+}   
+.btn-login a, .btn-register a{
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+}
+@media (max-width: 767px){
+    .home{
+        padding: 10px;
+        height: auto;
+    }
+    .home-titles{
+        width: 90%;
+        margin: 15px;
+        gap: 1rem;
+        padding: 10px;
+    }
+    .home-titles h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .home-titles h2{
+        font-size: 20px;
+    }
+    .home-description p{
+        font-size: 20px;
+    }
+    .home-description img{
+        width: 100%;
+        height: auto;
+    }
+    .home-btns{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        width: 70%;
+    }
+    .btn-login, .btn-register{
+        padding: 10px 25px;
+        margin-bottom: 10px;
+    }
+    .btn-login a, .btn-register a{
+        font-size: 18px;
+    }
+}

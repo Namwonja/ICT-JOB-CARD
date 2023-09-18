@@ -1,0 +1,7 @@
+As a new user, I landed on the home page of the ICT Job Card website. I then
+had the option of logging in or registering as there were two buttons, the
+Register and Login buttons.
+Clicking on the Register button took me to a different page where I had to 
+enter various details of myself.
+Clicking on the Login button also redirected me to a different page where I had to 
+log into the site using the details I provided in the register page.
