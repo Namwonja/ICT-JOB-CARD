@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fishbody {
+
+    background: linear-gradient(60deg, slategray, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;/* to get full background cover*/
+    background-size: 100% 100vh;
+    
+}
+.fishall{
+    margin-left: 400px;
+    margin-right: 300px;
+    margin-top: 30px;
+    background-color: white;
+
+}
+.tab-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    /*background-color: #948c8c;*/
+    color: white;
+    text-shadow: 1px 1px 2px rgb(233, 19, 19), 0 0 25px rgb(22, 42, 223), 0 0 5px rgb(139, 0, 120);
+}
+
+.tab-content {
+    padding: 10px;
+    line-height: 3em;
+    display: none;
+    margin-top: 15px;
+}
+
+.tab-content.active {
+    display: block;
+}
+.label-frm2{ /*text input on straight line*/
+    width: 100px;
+    display: inline-block;
+}
+.input-frm2{
+    padding: 6px;  /* line height*/
+    margin: 10px; /* paragraph spacing*/ 
+    width: 400px;  
+}
+.addsave{
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+}
