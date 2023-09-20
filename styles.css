@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: garamond;
 }
+/*INDEX.HTML*/
 .home{
     display: flex;
     flex-direction: column;
@@ -72,7 +73,81 @@
     color: black;
     text-decoration: none;
 }
+
+/*LOGIN.HTML  and Registration.html*/
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding: 120px;
+}
+.login-box, .reg-login-box{
+    background-color:#AB4228;
+    padding: 74px 40px;
+    color: white;
+    width: 50%;
+}
+.log-h2, .reg-h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.input-grp, .reg-input-grp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.log-space, .reg-log-space{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.input-field, .reg-input-field{
+    border-radius: 15px;
+    border: 1px solid #999;
+    margin-bottom: 20px;
+    padding: 8px 0;
+}
+.submit-btn, .reg-submit-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #4E1F13;
+    border-style: none;
+    font-size: 18px;
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+}
+.log-welcome-image, .reg-welcome-image{
+    width: 50%;
+}
+.log-welcome-image img, .reg-welcome-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-box, .log-welcome-image {
+    height: 430px; 
+}
+.reg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    padding: 120px;
+}
+.reg-login-box, .reg-welcome-image{
+    height: 765px;
+}
+
+
 @media (max-width: 767px){
+    /*INDEX.HTML*/
     .home{
         padding: 10px;
         height: auto;
@@ -110,4 +185,19 @@
     .btn-login a, .btn-register a{
         font-size: 18px;
     }
+
+    /*LOGIN.HTML and registration.html*/
+    .login-container, .reg-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 60px;
+    }
+    .login-box, .log-welcome-image, .reg-login-box, .reg-welcome-image{
+        width: 100%;
+        height: auto;
+    }
+    .log-welcome-image img, .reg-welcome-image img{
+        height: auto;
+    }
+    
 }
